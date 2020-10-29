@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_shop_app/screens/categories_screen.dart';
 import 'package:flutter_shop_app/screens/category_meals_screen.dart';
 import 'package:flutter_shop_app/screens/meal_detail_screen.dart';
+import 'package:flutter_shop_app/screens/tabs_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -24,12 +25,13 @@ class MyApp extends StatelessWidget {
               headline1: TextStyle(
                   fontSize: 20,
                   fontFamily: 'RobotoCondensed',
+
                   fontWeight: FontWeight.bold),
             ),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       routes: {
-        '/': (ctx) => CategoryScreen(),
+        '/': (ctx) => TabsScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
       },
